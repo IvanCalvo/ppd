@@ -1,0 +1,18 @@
+ 
+Jacobi relaxation calculation: 2000 x 2000 grid with 1 threads
+Kernel executed in 101.229487 seconds with 3001 iterations and 1 threads
+ 
+Jacobi relaxation calculation: 2000 x 2000 grid with 2 threads
+Kernel executed in 51.247763 seconds with 3001 iterations and 2 threads
+ 
+Jacobi relaxation calculation: 2000 x 2000 grid with 5 threads
+Kernel executed in 30.741073 seconds with 3001 iterations and 5 threads
+ 
+Jacobi relaxation calculation: 2000 x 2000 grid with 10 threads
+Kernel executed in 36.687955 seconds with 3001 iterations and 10 threads
+ 
+Jacobi relaxation calculation: 2000 x 2000 grid with 20 threads
+Kernel executed in 35.050362 seconds with 3001 iterations and 20 threads
+ 
+Jacobi relaxation calculation: 2000 x 2000 grid with 40 threads
+Kernel executed in 48.279341 seconds with 3001 iterations and 40 threads

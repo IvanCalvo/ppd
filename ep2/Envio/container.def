@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: ufscar/ubuntu_mpich:latest
+
+%help
+    Laplace’s equation on a regular grid using simple Jacobi iteration.
+
+%files
+   ./app/. /opt
+
+%post
+    echo "Compiling programs..."
+    cd /opt && make
+    cp laplace_pth /usr/bin/
+
+%runscript
+    exec $@

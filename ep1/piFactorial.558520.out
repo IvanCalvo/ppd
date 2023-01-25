@@ -1,0 +1,28 @@
+*** SEQUENTIAL ***
+pi with 1000000000 steps is 3.141592654 in 3.428920 seconds
+*** PTHREAD ***
+1 thread
+pi with 1000000000 steps is 3.141592654 in 3.426065 seconds
+2 threads
+pi with 1000000000 steps is 3.141592654 in 1.714615 seconds
+5 threads
+pi with 1000000000 steps is 3.141592654 in 0.749156 seconds
+10 threads
+pi with 1000000000 steps is 3.141592654 in 0.431152 seconds
+20 threads
+pi with 1000000000 steps is 3.141592654 in 0.314767 seconds
+40 threads
+pi with 1000000000 steps is 3.141592654 in 0.197652 seconds
+*** OPENMP ***
+1 thread
+pi with 1000000000 steps is 3.141592654 in 3.415236 seconds in 1 procs
+2 threads
+pi with 1000000000 steps is 3.141592654 in 1.698403 seconds in 2 procs
+5 threads
+pi with 1000000000 steps is 3.141592654 in 0.713524 seconds in 5 procs
+10 threads
+pi with 1000000000 steps is 3.141592654 in 0.426717 seconds in 10 procs
+20 threads
+pi with 1000000000 steps is 3.141592654 in 0.246208 seconds in 20 procs
+40 threads
+pi with 1000000000 steps is 3.141592654 in 0.247849 seconds in 40 procs

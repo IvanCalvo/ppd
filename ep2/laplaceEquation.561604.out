@@ -1,0 +1,25 @@
+*** PTHREAD ***
+1 thread
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 114.133437 seconds with 3001 iterations and 1 threads
+2 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 81.402754 seconds with 3001 iterations and 2 threads
+5 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 61.684307 seconds with 3001 iterations and 5 threads
+10 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 61.690063 seconds with 3001 iterations and 10 threads
+20 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 61.334729 seconds with 3001 iterations and 20 threads
+40 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 60.596369 seconds with 3001 iterations and 40 threads
