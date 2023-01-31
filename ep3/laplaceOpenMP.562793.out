@@ -1,0 +1,28 @@
+*** OPENMP ***
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 101.003957 seconds with 3001 iterations with 1 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 52.620582 seconds with 3001 iterations with 2 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 32.274062 seconds with 3001 iterations with 4 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 26.151594 seconds with 3001 iterations with 8 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 24.178068 seconds with 3001 iterations with 16 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 23.830605 seconds with 3001 iterations with 24 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 23.885140 seconds with 3001 iterations with 32 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 26.679517 seconds with 3001 iterations with 36 threads
+Jacobi relaxation calculation: 2000 x 2000 grid
+
+Kernel executed in 27.401371 seconds with 3001 iterations with 40 threads
