@@ -124,7 +124,7 @@ int main(int argc, char *argv[]){
             for(int j = 1; j < size-1; j++) {
 
                 new_grid[i][j] = 0.25 * (grid[i][j+1] + grid[i][j-1] +
-                                         grid[i-1][j] + grid[i+1][j]);
+                                            grid[i-1][j] + grid[i+1][j]);
 
             }
         }
@@ -137,7 +137,7 @@ int main(int argc, char *argv[]){
                 grid[i][j] = new_grid[i][j];
             }
         }
-
+        
         iter++;
     }
 
@@ -150,7 +150,7 @@ int main(int argc, char *argv[]){
     //save the final grid in file
     save_grid();
 
-    printf("\nKernel executed in %lf seconds with %d iterations with %d threads\n", exec_time, iter, omp_get_max_threads());
+    printf("Kernel executed in %lf seconds with %d iterations with %d threads\n\n", exec_time, iter, omp_get_max_threads());
 
     return 0;
 }
