@@ -7,6 +7,9 @@
 #SBATCH --output=%x.%j.out          # Name of stdout output file - %j expands to jobId and %x to jobName
 #SBATCH --error=%x.%j.err           # Name of stderr output file
 
+echo "info CPU"
+lscpu
+
 echo "*** OPENMP ***"
 for i in 1 2 4 8 16 24 32 36 40
 do
