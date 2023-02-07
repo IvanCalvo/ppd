@@ -10,9 +10,10 @@
 echo "info CPU"
 lscpu
 
+echo " "
 echo "*** OPENMP ***"
 for i in 1 2 4 8 16 24 32 36 40
 do
     export OMP_NUM_THREADS=$i
-    srun singularity run container.sif laplace_openmp 1000
+    srun singularity run container.sif laplace_openmp 2000
 done

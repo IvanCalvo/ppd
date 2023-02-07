@@ -119,7 +119,7 @@ int main(int argc, char *argv[]){
     while ( iter <= ITER_MAX ) {
         // calculates the Laplace equation to determine each cell's next value
         // kernel 1
-        #pragma omp parallel for schedule(runtime)
+        #pragma omp parallel for collapse(2)
         for(int i = 1; i < size-1; i++) {
             for(int j = 1; j < size-1; j++) {
 
@@ -131,7 +131,7 @@ int main(int argc, char *argv[]){
 
         // copy the next values into the working array for the next iteration
         // kernel 2
-        #pragma omp parallel for schedule(runtime)
+        #pragma omp parallel for collapse(2)
         for(int i = 1; i < size-1; i++) {
             for(int j = 1; j < size-1; j++) {
                 grid[i][j] = new_grid[i][j];
