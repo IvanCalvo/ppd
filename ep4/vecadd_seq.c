@@ -27,15 +27,15 @@ int main(int argc, char *argv[]) {
 
     int size = atoi(argv[1]);
     int err = 0;
-    float *a = (float*) malloc(size * sizeof(float));
-    float *b = (float*) malloc(size * sizeof(float));
-    float *c = (float*) malloc(size * sizeof(float));
-    float *res = (float*) malloc(size * sizeof(float));
+    double *a = (double*) malloc(size * sizeof(double));
+    double *b = (double*) malloc(size * sizeof(double));
+    double *c = (double*) malloc(size * sizeof(double));
+    double *res = (double*) malloc(size * sizeof(double));
 
     // fill the arrays
     for (int i = 0; i < size; i++){
-        a[i] = (float) i;
-        b[i] = 2.0 * (float) i;
+        a[i] = (double) i;
+        b[i] = 2.0 * (double) i;
         c[i] = 0.0;
         res[i] = i + 2 * i;
     }
@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
 
     // test results
     for (int i = 0; i < size; i++){
-        float val = c[i] - res[i];
+        double val = c[i] - res[i];
         val = val * val;
 
         if(val > TOL)
