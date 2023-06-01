@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: ufscar/ubuntu_mpich:latest
+
+%help
+    Aplicação do cálculo de waves para ser executado no cluster openHPC da UFSCAR
+
+%files
+   ./app/. /opt
+
+%post
+    echo "Compiliando programas..."
+    cd /opt && make
+    cp wave_seq wave_openMP /usr/bin/
+
+%runscript
+    exec $@
